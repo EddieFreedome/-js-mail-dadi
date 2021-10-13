@@ -13,9 +13,10 @@ for (let i = 1; i < userList.length ; i++) {
     currentsUser = false;
     const listedUser = userList[i];
 
-    if (currentUser = true) {
+    if (currentUser === listedUser) {
+        currentUser = true;
         alert("Utente già registrato");
-    }   else {
+    }   else if (!currentUser) {  //currentUser===false
         userList.push(currentUser);
         alert("Nuovo utente, registrato!");
     }
