@@ -7,7 +7,7 @@
 
 //potrei validare la dicitura "@boolean.it" per assicurarmi sia una mail... come?
 
-const userList = ["gigi", "peppa", "rosamaria", "graziella"];
+const userList = ["gigi@boolean.it", "peppa@boolean.it", "rosamaria@boolean.it", "graziella@boolean.it"];
 console.log(userList);
 const currentUser = prompt("Inserisci la tua mail che termina con @boolean.it");   //servono due const utenti: uno che prenda il valore di ciascun elemento dell'array, l'altro inserito dall'utente.
 let existProbe = false;
