@@ -7,17 +7,23 @@
 
 const userList = ["gigi", "peppa", "rosamaria", "graziella"];
 console.log(userList);
-const currentUser = prompt("Inserisci il tuo nome").toLowerCase();   //servono due const utenti: uno che prenda il valore di ciascun elemento dell'array, l'altro inserito dall'utente.
+const currentUser = prompt("Inserisci il tuo nome");   //servono due const utenti: uno che prenda il valore di ciascun elemento dell'array, l'altro inserito dall'utente.
+let existprobe = false;
 
 for (let i = 1; i < userList.length ; i++) {
-    currentsUser = false;
     const listedUser = userList[i];
 
     if (currentUser === listedUser) {
-        currentUser = true;
-        alert("Utente già registrato");
-    }   else if (!currentUser) {  //currentUser===false
-        userList.push(currentUser);
-        alert("Nuovo utente, registrato!");
+        existprobe === true;
+        
     }
+}
+
+
+if (!existprobe) {  //currentUser===false
+    userList.push(currentUser.toLowerCase());
+    console.log(userList)
+    alert("Nuovo utente, registrato!");
+} else {
+    alert("Utente già registrato");
 }
