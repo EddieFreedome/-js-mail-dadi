@@ -7,10 +7,11 @@
 
 const userList = ["gigi", "peppa", "rosamaria", "graziella"];
 console.log(userList);
-const currentUser = prompt("Inserisci il tuo nome").toLowerCase();
+const currentUser = prompt("Inserisci il tuo nome").toLowerCase();   //servono due const utenti: uno che prenda il valore di ciascun elemento dell'array, l'altro inserito dall'utente.
 
 for (let i = 1; i < userList.length ; i++) {
     currentsUser = false;
+    const listedUser = userList[i];
 
     if (currentUser = true) {
         alert("Utente già registrato");
